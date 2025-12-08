@@ -17,3 +17,16 @@ if selection == 'addition':
     print(f"Result of addition = {result}")
 
 
+elif selection == 'subtraction':
+      nums_to_subtract = int(input('How many numbers do you want to subtract?: '))
+      while count < nums_to_subtract:
+        num = int(input('Enter a number: '))
+        num_list.append(num)
+        count += 1        
+          
+
+      result = num_list[0]
+      for n in num_list[1:]:
+        result -= n
+
+      print(f"Result of subtraction = {result}")
