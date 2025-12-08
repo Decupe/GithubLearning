@@ -30,3 +30,17 @@ elif selection == 'subtraction':
         result -= n
 
       print(f"Result of subtraction = {result}")
+
+elif selection == 'multiplication':
+    nums_to_multiply = int(input('How many numbers do you want to multiply?: '))
+    
+    while count < nums_to_multiply:
+        num = int(input('Enter a number: '))
+        num_list.append(num)
+        count += 1
+    
+    result = 1
+    for n in num_list:
+        result *= n
+
+    print(f"Product of numbers = {result}")
